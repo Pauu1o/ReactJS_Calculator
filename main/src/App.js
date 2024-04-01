@@ -16,9 +16,9 @@ function App() {
     }
   };
   return (
-    <div className="bg-slate-800 min-h-screen w-screen flex justify-center items-center">
-      <div className="flex flex-col items-center w-40% ">
-        <div className="bg-slate-900  rounded-t-[1rem] p-3 w-40% shadow-xl shadow-gray-900 border-l-[.1px] border-r-[.1px] border-t-[.1px] border-gray-800">
+    <div className="bg-slate-800 min-h-screen flex justify-center items-center ">
+      <div className="flex flex-col items-center w-65">
+        <div className="bg-slate-900  rounded-t-[1rem] p-3  shadow-xl shadow-gray-900 border-l-[.1px] border-r-[.1px] border-t-[.1px] border-gray-800">
           <div className="text-white text-left opacity-25 text-sm">
             Calculator
           </div>
