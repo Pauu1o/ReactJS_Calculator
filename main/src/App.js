@@ -70,9 +70,9 @@ function App() {
             onClick={HandleClick}
             type="button"
             className="operator1 text-gold"
-            id="."
+            id="%"
           >
-            .
+            %
           </button>{" "}
           <button
             onClick={HandleClick}
@@ -181,31 +181,24 @@ function App() {
           <button
             onClick={HandleClick}
             type="button"
-            className="operator2 rounded-bl-[1rem]"
-            id="%"
-          >
-            %
-          </button>{" "}
-          <button
-            onClick={HandleClick}
-            type="button"
-            className="operator2"
+            className="operator2 rounded-bl-[1rem] col-span-2"
             id="0"
           >
             0
-          </button>
+          </button>{" "}
           <button
             onClick={HandleClick}
+            row-2
             type="button"
             className="operator2"
-            id="00"
+            id="."
           >
-            00
+            .
           </button>{" "}
           <button
             onClick={calculate}
             type="button"
-            className="operator3 text-black rounded-br-[1rem] py-8"
+            className="operator3 text-black rounded-br-[1rem] py-6"
             id="="
           >
             =
