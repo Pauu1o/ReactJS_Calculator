@@ -17,10 +17,10 @@ function App() {
   };
   return (
     <div className="bg-slate-800 min-h-screen w-screen flex justify-center items-center">
-      <div className="flex flex-col items-center w-full">
-        <div className="bg-slate-900 shadow-md rounded-t-[.5rem] p-3 w-1/6">
-          <div className="text-white text-left opacity-25 text-2sm">
-            Calculator
+      <div className="flex flex-col items-center w-40%">
+        <div className="bg-slate-900 shadow-md rounded-t-[.5rem] p-3 w-40%">
+          <div className="text-white text-left opacity-25 text-xl">
+            calculator
           </div>
           <div className="flex justify-center relative">
             <input
@@ -32,7 +32,7 @@ function App() {
           </div>
         </div>
 
-        <div className="bg-calcbot shadow-md  w-1/6 grid grid-cols-4 rounded-b-[0.5rem] text-white text-sm ">
+        <div className="bg-calcbot shadow-md w-full grid grid-cols-4 rounded-b-[0.5rem] text-white text-sm ">
           <button
             onClick={clearAll}
             type="button"
@@ -167,11 +167,21 @@ function App() {
           >
             %
           </button>{" "}
-          <button type="button" className="operator2" id="00">
-            00
-          </button>
-          <button type="button" className="operator" id="0">
+          <button
+            onClick={HandleClick}
+            type="button"
+            className="operator2"
+            id="0"
+          >
             0
+          </button>
+          <button
+            onClick={HandleClick}
+            type="button"
+            className="operator1"
+            id="00"
+          >
+            00
           </button>{" "}
           <button
             onClick={calculate}
